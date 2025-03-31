@@ -36,7 +36,17 @@ jobs:
         run: pnpm install
 
       - name: Build the app
-        run: pnpm build:release
+        shell: bash
+        run: |
+          if [ "$RUNNER_OS" == "Windows" ]; then
+            pnpm tauri build
+            mkdir -p src/download
+            cp -r src-tauri/target/release/bundle/* src/download/
+            rm -rf src-tauri/target/release/bundle
+          else
+            chmod +x ./scripts/build.sh
+            ./scripts/build.sh
+          fi
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
