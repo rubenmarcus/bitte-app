@@ -32,7 +32,9 @@ dist-ssr
 *.sw?
 
 # Rust/Tauri specific
-target/
+target/debug/
+target/rls/
+target/package/
 **/*.rs.bk
 Cargo.lock
 *.pdb
@@ -42,10 +44,6 @@ Cargo.lock
 *.exe
 *.out
 *.app
-*.dmg
-*.deb
-*.msi
-*.appimage
 
 # Environment files
 .env
@@ -63,3 +61,10 @@ Cargo.lock
 # System Files
 .DS_Store
 Thumbs.db
+
+# Allow application bundles and release builds
+!target/release/
+!*.dmg
+!*.msi
+!*.deb
+!*.appimage
