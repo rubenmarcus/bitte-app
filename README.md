@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Bitte AI Desktop](dapp.png =300x)
+![Bitte AI Desktop](dapp.png)
 
 Interact with blockchain through natural language using AI agents.
 
