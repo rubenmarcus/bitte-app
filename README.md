@@ -2,11 +2,11 @@
 
 <div align="center">
 
-![Bitte AI Desktop](src-tauri/icons/bitte-icon-superellipse.png)
+![Bitte AI Desktop](dapp.png =300x)
 
 Interact with blockchain through natural language using AI agents.
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/rubenmarcus/bitte-desktop)](https://github.com/rubenmarcus/bitte-desktop/releases/latest)
+
 [![License](https://img.shields.io/github/license/rubenmarcus/bitte-desktop)](LICENSE)
 
 [Download](#download) • [Features](#features) • [Getting Started](#getting-started) • [Documentation](https://bitte.ai/docs)
@@ -39,7 +39,6 @@ Download the latest version of Bitte AI Desktop for your operating system:
 | macOS (Intel) | [Bitte Desktop_0.1.0_x64.dmg](https://github.com/rubenmarcus/bitte-desktop/releases/download/v0.1.0/Bitte.Desktop_0.1.0_x64.dmg) |
 | Windows | [Bitte Desktop_0.1.0_x64.msi](https://github.com/rubenmarcus/bitte-desktop/releases/download/v0.1.0/Bitte.Desktop_0.1.0_x64.msi) |
 | Linux (Debian/Ubuntu) | [bitte-desktop_0.1.0_amd64.deb](https://github.com/rubenmarcus/bitte-desktop/releases/download/v0.1.0/bitte-desktop_0.1.0_amd64.deb) |
-| Linux (Universal) | [bitte-desktop_0.1.0_amd64.AppImage](https://github.com/rubenmarcus/bitte-desktop/releases/download/v0.1.0/bitte-desktop_0.1.0_amd64.AppImage) |
 
 [View all releases](https://github.com/rubenmarcus/bitte-desktop/releases)
 
