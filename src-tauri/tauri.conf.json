@@ -1,7 +1,7 @@
 {
   "identifier": "ai.bitte.chat",
   "productName": "Bitte Desktop",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "build": {
     "beforeDevCommand": "pnpm dev",
     "beforeBuildCommand": "pnpm build",
