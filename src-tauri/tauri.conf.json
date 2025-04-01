@@ -27,7 +27,16 @@
         "resizable": true,
         "title": "Bitte AI Desktop",
         "width": 1400,
-        "label": "main"
+        "label": "main",
+        "minWidth": 800,
+        "minHeight": 600
+      },
+      {
+        "fullscreen": true,
+        "resizable": false,
+        "title": "Bitte AI Mobile",
+        "label": "mobile",
+        "visible": false
       }
     ]
   },
@@ -37,6 +46,30 @@
       "icons/bitte-icon-superellipse.png",
       "icons/bitte.ico"
     ],
-    "targets": ["app", "dmg", "deb", "msi"]
+    "targets": ["app", "dmg", "deb", "msi", "ios", "android"],
+    "ios": {
+      "developmentTeam": "YOUR_TEAM_ID",
+      "entitlements": null,
+      "icons": {
+        "20pt": "icons/ios/Icon-20@2x.png",
+        "29pt": "icons/ios/Icon-29@2x.png",
+        "40pt": "icons/ios/Icon-40@2x.png",
+        "60pt": "icons/ios/Icon-60@2x.png",
+        "76pt": "icons/ios/Icon-76@2x.png",
+        "83.5pt": "icons/ios/Icon-83.5@2x.png",
+        "1024pt": "icons/ios/Icon-1024.png"
+      }
+    },
+    "android": {
+      "package": "ai.bitte.chat",
+      "versionCode": 1,
+      "icons": {
+        "mdpi": "icons/android/mdpi.png",
+        "hdpi": "icons/android/hdpi.png",
+        "xhdpi": "icons/android/xhdpi.png",
+        "xxhdpi": "icons/android/xxhdpi.png",
+        "xxxhdpi": "icons/android/xxxhdpi.png"
+      }
+    }
   }
 }
