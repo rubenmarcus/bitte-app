@@ -81,6 +81,9 @@ jobs:
           brew install cocoapods
           pod setup
 
+      - name: Initialize Android project
+        run: pnpm tauri android init
+
       - name: Build Android
         run: pnpm tauri android build
 
