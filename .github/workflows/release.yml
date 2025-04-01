@@ -76,6 +76,16 @@ jobs:
       - name: Install Android SDK
         uses: android-actions/setup-android@v2
 
+      - name: Install Android NDK
+        uses: android-actions/setup-ndk@v1
+        with:
+          version: '25.2.9519653'
+
+      - name: Set up NDK environment variables
+        run: |
+          echo "NDK_HOME=$ANDROID_NDK_HOME" >> $GITHUB_ENV
+          echo "ANDROID_NDK_HOME=$ANDROID_NDK_HOME" >> $GITHUB_ENV
+
       - name: Copy Android Icons
         run: |
           mkdir -p src-tauri/android/app/src/main/res
