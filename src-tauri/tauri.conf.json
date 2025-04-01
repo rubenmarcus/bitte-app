@@ -34,7 +34,8 @@
   "bundle": {
     "active": true,
     "icon": [
-      "icons/bitte-icon-superellipse.png"
+      "icons/bitte-icon-superellipse.png",
+      "icons/bitte.ico"
     ],
     "targets": ["app", "dmg", "deb", "msi"]
   }
