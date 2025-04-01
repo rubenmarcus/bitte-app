@@ -46,17 +46,6 @@
       "icons/bitte-icon-superellipse.png",
       "icons/bitte.ico"
     ],
-   "targets": "all",
-    "android": {
-      "package": "ai.bitte.chat",
-      "versionCode": 1,
-      "icons": {
-        "mdpi": "icons/android/mdpi.png",
-        "hdpi": "icons/android/hdpi.png",
-        "xhdpi": "icons/android/xhdpi.png",
-        "xxhdpi": "icons/android/xxhdpi.png",
-        "xxxhdpi": "icons/android/xxxhdpi.png"
-      }
-    }
+    "targets": "all"
   }
 }

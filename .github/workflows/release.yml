@@ -76,16 +76,10 @@ jobs:
       - name: Install Android SDK
         uses: android-actions/setup-android@v2
 
-      - name: Generate Mobile Icons
+      - name: Copy Android Icons
         run: |
-          # Install icon generation tools using pnpm instead of npm
-          pnpm add -g @capacitor/assets
-
-          # Generate icons for Android only
-          pnpm cap assets generate --icon=./assets/icon.png --splash=./assets/splash.png --android-only
-
-          # Copy generated icons to appropriate location
-          cp -r capacitor-assets/android/app/src/main/res/* src-tauri/android/app/src/main/res/
+          mkdir -p src-tauri/android/app/src/main/res
+          cp -r src-tauri/icons/android/* src-tauri/android/app/src/main/res/
 
       - name: Initialize Android project
         run: pnpm tauri android init
