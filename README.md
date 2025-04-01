@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Bitte AI Desktop](dapp.png)
+![Bitte AI p](dapp.png)
 
 Interact with blockchain through natural language using AI agents.
 
@@ -39,12 +39,10 @@ Download the latest version of Bitte AI Desktop for your operating system:
 
 | Platform | Download |
 |----------|----------|
-| macOS (Apple Silicon) | [Bitte Desktop_0.1.0_aarch64.dmg](https://github.com/rubenmarcus/bitte-app/releases/download/v0.1.0/Bitte.Desktop_0.1.0_aarch64.dmg) |
-| macOS (Intel) | [Bitte Desktop_0.1.0_x64.dmg](https://github.com/rubenmarcus/bitte-app/releases/download/v0.1.0/Bitte.Desktop_0.1.0_x64.dmg) |
-| Windows | [Bitte Desktop_0.1.0_x64.msi](https://github.com/rubenmarcus/bitte-app/releases/download/v0.1.0/Bitte.Desktop_0.1.0_x64.msi) |
+| macOS  | [Bitte Desktop_0.1.0_aarch64.dmg](https://github.com/rubenmarcus/bitte-app/releases/download/v0.1.0/Bitte.Desktop_0.1.0_aarch64.dmg) |
+| Windows | [Bitte Desktop_0.1.0_x64.msi]((https://github.com/rubenmarcus/bitte-app/blob/main/src/download/windows/Bitte%20Desktop_0.1.0_x64_en-US.msi) |
 | Linux (Debian/Ubuntu) | [bitte-desktop_0.1.0_amd64.deb](https://github.com/rubenmarcus/bitte-app/releases/download/v0.1.0/bitte-desktop_0.1.0_amd64.deb) |
-| Android | [Bitte Mobile_0.1.0.apk](https://github.com/rubenmarcus/bitte-app/releases/download/v0.1.0/Bitte.Mobile_0.1.0.apk) |
-| iOS | [App Store](https://apps.apple.com/app/bitte-ai/id123456789) |
+| Android | [Bitte Mobile_0.1.0.apk](https://github.com/rubenmarcus/bitte-app/blob/main/src/download/android/bitte-app.apk) |
 
 [View all releases](https://github.com/rubenmarcus/bitte-app/releases)
 
