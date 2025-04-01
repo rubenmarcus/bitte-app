@@ -93,11 +93,18 @@ jobs:
       - name: Build Android
         run: pnpm tauri android build
 
+      - name: Create download directory
+        run: mkdir -p src/download
+
+      - name: Copy Android APK
+        run: |
+          cp src-tauri/target/android/app/build/outputs/apk/release/*.apk src/download/
+
       - name: Upload Android artifact
         uses: actions/upload-artifact@v4
         with:
           name: bitte-desktop_${{ github.ref_name }}_android.apk
-          path: src-tauri/target/android/app/build/outputs/apk/release/*.apk
+          path: src/download/*.apk
           retention-days: 5
 
   create-release:
@@ -164,10 +171,13 @@ jobs:
             # Move the temporary file back to README.md
             mv "$TMP_FILE" README.md
 
-            # Commit changes
+            # Configure git
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
+
+            # Checkout main branch and apply changes
+            git checkout main
             git add README.md
             git commit -m "Update download links in README for release ${{ github.ref_name }}"
-            git push
+            git push origin main
           fi
